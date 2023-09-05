@@ -1,0 +1,210 @@
+:root {
+  --color: #0f0f0f;
+  --font-color: #ffff;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#hero {
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: black;
+}
+
+.hero-content h1 {
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#features {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.feature {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+#pricing {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.pricing-plan {
+  display: flex;
+  justify-content: center;
+}
+
+.plan {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.plan h3 {
+  font-size: 24px;
+}
+
+#contact {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contact-form {
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+#pricing h2 {
+  margin-bottom: 45px;
+}
+
+.plan .basic-plan {
+  position: relative;
+  top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: var(--color);
+    color: var(--font-color);
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #hero {
+    padding: 100px 0;
+  }
+
+  .hero-content {
+    padding: 0 20px;
+    color: var(--font-color);
+  }
+
+  .cta-button {
+    margin-top: 10px;
+  }
+
+  #features {
+    padding: 30px 0;
+  }
+
+  .pricing-plan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .plan {
+    margin: 10px 0;
+    color: var(--color);
+  }
+
+  #contact {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
+  #pricing .plan ul{
+    width: 100%;
+    position: relative;
+    right: 30px;
+  }
+}
