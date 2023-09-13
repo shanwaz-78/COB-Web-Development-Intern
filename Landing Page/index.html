@@ -1,91 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Super Landing Page</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="nav-toggle" id="nav-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-
     <section id="hero">
-        <div class="hero-content">
-            <h1>Welcome to Our Super Landing Page</h1>
-            <p>Your one-stop solution for all your needs.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </div>
+      <div class="hero-content">
+        <h1>Welcome to Our Super Landing Page</h1>
+        <p>Your one-stop solution for all your needs.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+      </div>
     </section>
-
     <section id="features">
-        <div class="feature">
-            <h2>Feature 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="feature">
-            <h2>Feature 2</h2>
-            <p>Proin euismod massa in erat euismod, a varius tellus.</p>
-        </div>
-        <div class="feature">
-            <h2>Feature 3</h2>
-            <p>Sed nec nulla vel justo pulvinar vehicula eget eget dolor.</p>
-        </div>
+      <div class="feature">
+        <h2>Feature 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <h2>Feature 2</h2>
+        <p>Proin euismod massa in erat euismod, a varius tellus.</p>
+      </div>
+      <div class="feature">
+        <h2>Feature 3</h2>
+        <p>Sed nec nulla vel justo pulvinar vehicula eget eget dolor.</p>
+      </div>
     </section>
-
     <section id="pricing">
-        <h2>Pricing Plans</h2>
-        <div class="pricing-plan">
-            <div class="plan">
-                <h3>Basic</h3>
-                <p>$19/month</p>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Limited Support</li>
-                </ul>
-                <a href="#contact" class="cta-button basic-plan">Get Started</a>
-            </div>
-            <div class="plan">
-                <h3>Pro</h3>
-                <p>$49/month</p>
-                <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-                    <li>Premium Support</li>
-                </ul>
-                <a href="#contact" class="cta-button">Get Started</a>
-            </div>
+      <h2>Pricing Plans</h2>
+      <div class="pricing-plan">
+        <div class="plan">
+          <h3>Basic</h3>
+          <p>$19/month</p>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Limited Support</li>
+          </ul>
+          <a href="#contact" class="cta-button basic-plan">Get Started</a>
         </div>
+        <div class="plan">
+          <h3>Pro</h3>
+          <p>$49/month</p>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+            <li>Premium Support</li>
+          </ul>
+          <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+      </div>
     </section>
-
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or need assistance, please feel free to contact us.</p>
-        <form>
-            <div class="input-group">
-                <input type="text" placeholder="Your Name" required>
-            </div>
-            <div class="input-group">
-                <input type="email" placeholder="Your Email" required>
-            </div>
-            <div class="input-group">
-                <textarea placeholder="Your Message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="cta-button">Submit</button>
-        </form>
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or need assistance, please feel free to
+        contact us.
+      </p>
+      <form>
+        <div class="input-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="input-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="input-group">
+          <textarea placeholder="Your Message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="cta-button">Submit</button>
+      </form>
     </section>
-
     <footer>
-        <p>&copy; 2023 Super Landing Page</p>
+      <p>&copy; 2023 Super Landing Page</p>
     </footer>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

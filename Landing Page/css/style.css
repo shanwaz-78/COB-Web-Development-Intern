@@ -29,6 +29,11 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 20px;
+  transition: 0.3s all;
+}
+nav ul li:hover {
+  text-decoration: underline;
+  letter-spacing: 1.3px;
 }
 
 nav a {
@@ -72,7 +77,7 @@ nav a {
 .feature {
   margin-bottom: 30px;
   display: flex;
-  gap: 20px;
+  gap: 35px;
   flex-direction: column;
 }
 
@@ -156,6 +161,28 @@ form {
   margin-top: 20px;
 }
 
+/* Add styles for the nav-toggle and navbar */
+#navbar {
+  display: block;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.navbar-open {
+  display: block !important;
+}
+
 @media (max-width: 768px) {
   body {
     background-color: var(--color);
@@ -199,10 +226,47 @@ form {
   #contact {
     padding: 30px 0;
   }
+  #navbar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding: 20px;
+  }
+
+  #navbar ul li {
+    margin-bottom: 15px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+  }
+  #navbar ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
 }
 
 @media (min-width: 390px) and (max-width: 844px) {
-  #pricing .plan ul{
+  #pricing .plan ul {
     width: 100%;
     position: relative;
     right: 30px;
